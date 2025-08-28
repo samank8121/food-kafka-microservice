@@ -11,11 +11,8 @@ const run = async () => {
   await admin.connect();
   await admin.createTopics({
     topics: [
-      { topic: "gateway-successful" },
-      { topic: "payment-successful" },
-      { topic: "order-successful" },
-      { topic: "log-register" },
-      { topic: "email-successful" },
+      { topic: "payment-done" },
+      { topic: "order-done" },
     ],
   });
 };
